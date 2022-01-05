@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 720px 1fr;
+}
+
+main  {
+  height: 100vh;
+  background-color: var(--body-bg-color);
+}
+
+main .container {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .container .logo {
+  max-width: 24.3125rem;
+  margin-top: 3.125rem;
+  margin-left: 1.875rem;
+}
+
+main .container .logo #logImage {
+  width: 100%;
+  height: 5.875rem;
+}
+
+main .container .info {
+  width: 40.44rem;
+  margin-top: 5.75rem;
+  margin-left: 2.25rem;
+}
+
+main .container .info #title {
+  color: var(--title-color);
+  font-family: 'Work Sans', 'sans-serif';
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+main .container .info #text1 {
+  color: var(--text-color);
+  font-family: 'Spartan', 'sans-serif';
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1rem;
+  margin-top: 0.5475rem;
+}
+
+main .container .info #text2 {
+  color: var(--text-color);
+  font-family: 'Spartan', 'sans-serif';
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.21rem;
+  margin-top: 0.5625rem;
+}
+
+main .container #form {
+  margin-left: 2.25rem;
+  margin-top: 3.125rem;
+}
+
+main .container #form > fieldset  {
+  border: none;
+  padding: 0;
+}
+
+main .container #form > fieldset > legend  {
+  color: var(--form-color);
+  font-family: 'Spartan', 'sans-serif';
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 1.18rem;
+}
+
+main .container #form #email {
+  margin-top: 1.06rem;
+  width: 49.875rem;
+  display: flex;
+}
+
+main .container #form #email #input-email {
+  width: 49.875rem;
+  border: none;
+  border-left: solid 0.3125rem var(--title-color);
+  filter: drop-shadow(0.25rem 0.625rem 0.9375rem rgba(0, 0, 0, 0.5));
+  font-family: 'Work Sans', 'sans-serif';
+  font-size: 0.75rem;
+  line-height: 0.87rem;
+  color: var(--form-color);
+  padding: 0.625rem;
+}
+
+main .container #form #email #input-email:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+main .container #form #email #button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: var(--bg-button-color);
+  z-index: 1;
+}
+
+main .container .link {
+  margin-top: 3.125rem;
+  margin-left: 2.25rem;
+}
+
+main .container .link a {
+  text-decoration: none;
+  color: var(--bg-button-color);
+  font-family: 'Spartan', 'sans-serif';
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.18rem;
+  align-items: center;
+}
+
+
+aside {
+  height: 100vh;
+  background-image: url(../assets/read_news.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
